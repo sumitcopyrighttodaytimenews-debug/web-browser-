@@ -1,0 +1,6 @@
+{
+  "name": "Apex Browser",
+  "description": "A highly customizable web browser featuring dynamic theme profiles, versatile UI layouts, tab controls, reader mode, ad protection, and an integrated Gemini AI sidekick companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

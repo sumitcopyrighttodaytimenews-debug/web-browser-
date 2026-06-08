@@ -1,0 +1,29 @@
+package com.example.data
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "bookmarks")
+data class Bookmark(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val title: String,
+    val url: String,
+    val addedAt: Long = System.currentTimeMillis()
+)
+
+@Entity(tableName = "history_items")
+data class HistoryItem(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val title: String,
+    val url: String,
+    val timestamp: Long = System.currentTimeMillis()
+)
+
+@Entity(tableName = "saved_tabs")
+data class SavedTab(
+    @PrimaryKey val id: String, // Unique tab UUID
+    val title: String,
+    val url: String,
+    val isIncognito: Boolean = false,
+    val lastActiveAt: Long = System.currentTimeMillis()
+)
